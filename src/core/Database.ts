@@ -1,4 +1,4 @@
-import type { Adapter } from "./types";
+import type { Adapter } from "@/types";
 
 type UpdateFn<Data> = (prev: Data) => void | Promise<void>;
 

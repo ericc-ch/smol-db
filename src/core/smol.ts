@@ -1,5 +1,5 @@
+import type { Adapter } from "@/types";
 import { Database } from "./Database";
-import type { Adapter } from "./types";
 
 export async function smol<Data>({
   adapter,
