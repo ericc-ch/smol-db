@@ -1,14 +1,50 @@
 {
   "name": "smol-db",
-  "module": "index.ts",
-  "type": "module",
-  "devDependencies": {
-    "@types/bun": "latest"
+  "version": "1.0.0",
+  "description": "Lightweight and simple database for any environment",
+  "keywords": [
+    "database",
+    "db",
+    "lightweight",
+    "simple",
+    "JSON",
+    "esm"
+  ],
+  "homepage": "https://github.com/ericc-ch/smol-db",
+  "bugs": {
+    "url": "https://github.com/ericc-ch/smol-db/issues"
   },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
+  "repository": {
+    "url": "https://github.com/ericc-ch/smol-db"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Erick Christian",
+    "email": "erickchristian48@gmail.com",
+    "url": "https://ericc-ch.github.io"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./lib/index.js",
+    "./node": "./lib/node.js",
+    "./browser": "./lib/browser.js"
+  },
+  "module": "index.ts",
+  "scripts": {
+    "benchmark": "bun run ./scripts/benchmark.ts",
+    "build": "bun run ./scripts/build.ts",
+    "lint": "eslint ."
   },
   "dependencies": {
     "ritzen": "^1.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.5.0",
+    "@types/bun": "latest",
+    "@types/eslint__js": "^8.42.3",
+    "bun-plugin-dts": "^0.2.3",
+    "eslint": "^9.5.0",
+    "typescript": "^5.5.2",
+    "typescript-eslint": "^7.14.1"
   }
 }
